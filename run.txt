@@ -1,6 +1,6 @@
 # Adaptation from https://hub.docker.com/r/ixilon/qgis/
 Howto use this image
-IMAGE=lmotta/qgis
+IMAGE=lmotta/qgis-ubuntugis-nightly-release
 XSOCK=/tmp/.X11-unix
 XAUTH=/tmp/.docker.xauth
 
