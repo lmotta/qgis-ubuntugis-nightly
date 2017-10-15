@@ -1,0 +1,13 @@
+# Adaptation from https://hub.docker.com/r/ixilon/qgis/
+Howto use this image
+IMAGE=lmotta/qgis
+XSOCK=/tmp/.X11-unix
+XAUTH=/tmp/.docker.xauth
+
+xauth nlist ${DISPLAY} | sed -e 's/^..../ffff/' | xauth -f ${XAUTH} nmerge -
+docker run --rm --interactive --tty --name qgis \
+  --env DISPLAY=unix${DISPLAY} \
+  --env XAUTHORITY=${XAUTH} \
+  --volume ${XAUTH}:${XAUTH} \
+  --volume ${XSOCK}:${XSOCK} \
+  ${IMAGE}
