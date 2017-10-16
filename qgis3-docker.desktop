@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=QGIS3 Master in Docker
+GenericName=QGIS3 Master in Docker
+Comment=GIS3 Master in Docker
+Exec=/usr/local/bin/run-qgis3-docker.sh %U
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/shp;
+Icon=/usr/local/qgis3-icon-60x60.png
+Categories=Science,
