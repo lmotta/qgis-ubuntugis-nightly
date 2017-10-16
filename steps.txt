@@ -1,6 +1,6 @@
 # Create Image/Repository:
 - Go to directoiry with 'Dockerfile'
-- docker build -t  qgis .
+- docker build -t  qgis3 .
 
 # Adaptation from https://hub.docker.com/r/kartoza/qgis-desktop/
 # Icon
